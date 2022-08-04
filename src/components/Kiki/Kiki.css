@@ -1,9 +1,10 @@
 .kiki {
     position: absolute;
-    height: 100%;
-    width: auto;
+    height: 334px;
+    width: 240px;
     animation-name: sprite; 
     animation: sprite 0.8s steps(12) infinite;
+    transform: translate(-25%, -25%) scale(1);
 }
 
 @keyframes sprite {
