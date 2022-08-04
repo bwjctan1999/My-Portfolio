@@ -1,7 +1,7 @@
 .kiki {
     position: absolute;
-    height: 334px;
-    width: 240px;
+    height: 100%;
+    width: auto;
     animation-name: sprite; 
     animation: sprite 0.8s steps(12) infinite;
 }
