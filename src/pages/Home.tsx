@@ -24,7 +24,8 @@ export default function Home() {
             className="absolute m-0 top-0 left-0"
             style={{
               transform: `translate(${coor.x}px,${coor.y}px)`,
-              transition: "transform 0.5s linear",
+              transition: "transform 2.5s cubic-bezier(.32,2,.55,.27)",
+              // transform 2s cubic-bezier(.32,2,.55,.27)
             }}
           >
             <Kiki />
