@@ -1,0 +1,90 @@
+.card {
+  --light-blue: #56ccf2;
+  --dark-blue: #2f80ed;
+  --dark-yellow: #ffff00;
+  --light-yellow: #fffcac;
+  --dark-green: #11998e;
+  --light-green: #38ef7d;
+  --dark-black: #232526;
+  --light-black: #414345;
+}
+
+.card,
+.card-group {
+  aspect-ratio: 5/7;
+  width: 30vmin;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  border-radius: 6px;
+  transition: transform 800ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  outline: 0.2rem solid;
+  outline-offset: -0.5rem;
+}
+
+.card:nth-child(1) {
+  transform: translateX(-10%) rotate(-1deg);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-image: linear-gradient(
+      45deg,
+      var(--dark-black) 30%,
+      transparent 30.5%
+    ),
+    linear-gradient(180deg, var(--light-black), var(--dark-black) 70%);
+}
+
+.card:nth-child(2) {
+  transform: rotate(2deg);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-image: linear-gradient(
+      45deg,
+      var(--dark-green) 30%,
+      transparent 30.5%
+    ),
+    linear-gradient(180deg, var(--light-green), var(--dark-green) 70%);
+}
+
+.card:nth-child(3) {
+  transform: translateX(-6%) rotate(-3deg);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-image: linear-gradient(
+      45deg,
+      var(--dark-yellow) 30%,
+      transparent 30.5%
+    ),
+    linear-gradient(180deg, var(--light-yellow), var(--dark-yellow) 70%);
+}
+
+.card:nth-child(4) {
+  transform: translate(10%, 3%) rotate(5deg);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-image: linear-gradient(
+      45deg,
+      var(--dark-blue) 30%,
+      transparent 30.5%
+    ),
+    linear-gradient(180deg, var(--light-blue), var(--dark-blue) 70%);
+}
+
+.card-group:hover > .card:nth-child(1) {
+  transform: translate(-70%, 15%) rotate(-22deg);
+}
+
+.card-group:hover > .card:nth-child(2) {
+  transform: translate(-25%, 5%) rotate(-8deg);
+}
+
+.card-group:hover > .card:nth-child(3) {
+  transform: translate(30%, 7%) rotate(10deg);
+}
+
+.card-group:hover > .card:nth-child(4) {
+  transform: translate(70%, 15%) rotate(20deg);
+}
+
+.card:hover {
+  cursor: pointer;
+  z-index: 100;
+}
