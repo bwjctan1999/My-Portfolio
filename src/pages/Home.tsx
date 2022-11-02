@@ -17,7 +17,9 @@ export default function Home() {
           <h1 className="text-2xl">Hello there, I'm</h1>
           <h1 className="text-7xl">BENZ TAN</h1>
           <div className="w-48 h-1 mx-auto bg-white" />
-          <h1 className="text-2xl">The Nibba</h1>
+          <h1 className="text-2xl">
+            UI / UX Designer & Frontend Web Developer
+          </h1>
         </div>
         <div className="w-1/2">
           <div
