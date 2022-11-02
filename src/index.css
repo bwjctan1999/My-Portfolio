@@ -1,11 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    html {
-        font-family: 'Jacques Francois', serif;
-    }
+  html {
+    font-family: "Jacques Francois", serif;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  /* this makes sure the padding and the border is included in the box sizing */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html body {
+  padding: 0;
+  margin: 0;
+  overflow-y: inherit;
 }
